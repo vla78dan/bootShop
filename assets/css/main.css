@@ -3,6 +3,7 @@
     --text-color: #6c757d;
     --accent-color: #ffd333;
     --contrast-color: #3d464d;
+    --accent-colorRed: #dc7a1d;
 
 }
 
@@ -16,6 +17,22 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
 }
+
+a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--accent-colorRed);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /*=========================== General rules Общие правила====================================*/
 .wrapper {
     min-height: 100%;
@@ -31,6 +48,14 @@ main.main {
 
 
 /*=========================== Header rules Общие правила====================================*/
+
+.header-top-phone a {
+    text-decoration: none;
+}
+
+.header-top-phone a:hover {
+    text-decoration: underline;
+}
 
 ul.social-icons {
     list-style: none;
@@ -49,6 +74,7 @@ ul.social-icons a {
     border-radius: 50%;
     float: left;
     text-align: center;
+    transition: all 0.4s;
 }
 ul.social-icons a:hover {
     background-color: var(--contrast-color);
