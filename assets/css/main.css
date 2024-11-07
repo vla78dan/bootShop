@@ -33,6 +33,11 @@ img {
     height: auto;
 }
 
+.btn,
+.dropdown-menu {
+    border-radius: 0;
+}
+
 /*=========================== General rules Общие правила====================================*/
 .wrapper {
     min-height: 100%;
@@ -76,9 +81,14 @@ ul.social-icons a {
     text-align: center;
     transition: all 0.4s;
 }
+
 ul.social-icons a:hover {
     background-color: var(--contrast-color);
     color: var(--accent-color);
+}
+
+.header-top .btn {
+    background-color: #fff;
 }
 
 
